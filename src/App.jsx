@@ -1,11 +1,7 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Button from "./Components/Button";
 import Footer from "./Components/Footer";
 import NavigationBar from "./Components/NavigationBar";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom/cjs/react-router-dom.min";
 import HomePage from "./Pages/Homepage";
 import EventPage from "./Pages/EventPage";
 import CateringPage from "./Pages/CateringPage";
@@ -17,26 +13,16 @@ function App() {
   return (
     <>
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/Event">
-            <EventPage/>
-          </Route>
-          <Route path="/Catering">
-            <CateringPage/>
-          </Route>
-          <Route path="/Menu">
-            <MenuPage/>
-          </Route>
-          <Route path="/Reservation">
-            <ReservationPage/>
-          </Route>
-          <Route path="/Restaurant">
-            <RestaurantPage/>
-          </Route>
-        </Switch>
+        <NavigationBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Event" element={<EventPage />} />
+          <Route path="/Catering" element={<CateringPage />} />
+          <Route path="/Menu" element={<MenuPage />} />
+          <Route path="/Reservation" element={<ReservationPage />} />
+          <Route path="/Restaurant" element={<RestaurantPage />} />
+        </Routes>
+        <Footer />
       </Router>
     </>
   );

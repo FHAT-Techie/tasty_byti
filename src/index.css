@@ -933,9 +933,9 @@ footer {
   }
 }
 #root > header {
-  display: hidden !important;
+  display: none !important;
 }
 #root > footer {
-  display: hidden !important;
+  display: none !important;
 }
 

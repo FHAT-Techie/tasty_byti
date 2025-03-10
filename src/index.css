@@ -932,6 +932,7 @@ footer {
     padding: 32px 16px;
   }
 }
-header:first-child {
+#root > header {
   display: none !important;
 }
+

@@ -681,6 +681,7 @@ gap: 32px;
   object-fit: cover; /* Ensures the image fills its container */
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
+  min-height: 200px;
 }
 
 .cateringImg:hover img {

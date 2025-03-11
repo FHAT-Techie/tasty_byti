@@ -1,10 +1,12 @@
+import Footer from "../Components/Footer";
 import NavigationBar from "../Components/NavigationBar";
 import OtherPageHero from "../Components/OtherPageHero";
+
 
 export default function CateringPage() {
   return (
     <>
-   
+   <div>
       <OtherPageHero
         Header="EVENT CATERING"
         SubHeader="At Tasty__byti, we bring more than just food—we create unforgettable culinary experiences tailored to your special occasions. Whether it’s a private gathering, corporate event, wedding, or celebration, our expert catering team delivers impeccable service with precision and attention to detail.
@@ -52,6 +54,10 @@ export default function CateringPage() {
   </div>
  </div>
       </div>
+      <Footer/>
+   
+      </div>
     </>
+
   );
 }

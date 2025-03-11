@@ -14,6 +14,7 @@ export default function EventPage() {
 
     return (
         <>
+        <div>
             <OtherPageHero
                 Header="TASTY-BYTI EVENTS"
                 SubHeader="At Tasty__ByTi, we believe every day should be a celebration of good food, great company, and amazing vibes! That’s why we’ve curated a lineup of special themed events throughout the week, offering exclusive discounts, unique menus, and exciting experiences. Mark your calendars and don’t miss out on these delicious deals!"
@@ -24,6 +25,7 @@ export default function EventPage() {
                 ))}
             </div>
             <Footer />
+            </div>
         </>
     );
 }
